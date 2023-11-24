@@ -1,0 +1,22 @@
+
+<ul>
+    <li><a href="/dashboard">dashboard</a></li>
+     <li><a href="/blog">blogpost</a></li>
+      <li><a href="/post">post</a></li>
+       <li><a href="/">home</a></li>
+</ul>
+<h1>ola</h1>
+
+{{#if approved}}
+    <p>parabens, seu cadastro foi aprovado</p>
+{{else}}
+    <p> O seu cadastro necessita de aprovação</p>
+{{/if}}
+<p>O nome do usuario é {{user.name}} {{user.surname}} e ele tem {{user.age}} anos. </p>
+
+{{#if auth}}
+    <p>
+        voce esta autenticado ,<a href="/dashboard">clique aqui</a> para acessar a area de membros
+    </p>
+{{/if}}
+
